@@ -44,4 +44,4 @@ def bin_pack(items=[], require_sort=True, alg=0, max_weight=1):
     
     finish = time.time()
 
-    return [bins, len(bins), finish - start]
+    return [bins, len(bins), 1000*(finish - start)]
