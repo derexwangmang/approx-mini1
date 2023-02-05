@@ -8,8 +8,6 @@ def generate_data(num_items):
     for _ in range(num_items):
         res.append(random.random())
 
-    print(res)
-
     os.makedirs(str(num_items))
     with open("{}/data.csv".format(num_items), "w") as f:
         write = csv.writer(f)
@@ -36,7 +34,7 @@ def test(num_items=10):
         write.writerow(sorted_first_fit)
 
     sorted_best_fit = bins.bin_pack(data, True, 1, 1)
-    with open("{}/sorted_first_fit.csv".format(num_items), "w") as f:
+    with open("{}/sorted_best_fit.csv".format(num_items), "w") as f:
         write = csv.writer(f)
         write.writerow(sorted_best_fit)
 
