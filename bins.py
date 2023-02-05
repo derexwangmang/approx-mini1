@@ -33,7 +33,7 @@ def bin_pack(items=[], require_sort=True, alg=0, max_weight=1):
     start = time.time()
 
     if require_sort:
-        items.sort()
+        items.sort(reverse=True)
     
     bins = [0]
     
