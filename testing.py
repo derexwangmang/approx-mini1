@@ -55,5 +55,6 @@ def test(num_items=1000, distribution=(1, [0, 1]), data_directory_name="None"):
     return first_fit, best_fit, sorted_first_fit, sorted_best_fit
 
 if __name__ == "__main__":
-    test(1000, (0.75, [0, 0.25]), "right_tailed_1000")
-    test(1000, (0.25, [0, 0.75]), "left_tailed_1000")
+    test(10000, (1, [0, 1]), "random_10000")
+    test(10000, (0.75, [0, 0.25]), "right_tailed_10000")
+    test(10000, (0.25, [0, 0.75]), "left_tailed_10000")
